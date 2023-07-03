@@ -15,7 +15,8 @@ module.exports = {
         plan: ["56px", "64px"],
         button: ["16px", "28px"],
         ["h1-lg"]: ["56px", "64px"],
-      
+        time: ["32px", "48px"],
+        timeName: ["12px", "28px"],
       },
     },
   },

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Button from "@/app/components/Button";
 import Card from "@/app/components/Card";
-
+import Footer from "@/app/components/Footer";
 export default function Home() {
   return (
     <>
@@ -12,17 +12,17 @@ export default function Home() {
         alt="Background Header"
         className="absolute -top-[170px]"
       />
-     
+
       <main className="flex flex-col items-center relative ">
-      <div className="absolute w-screen h-[1248px] bg-[#25293A] left-0 bottom-0 flex justify-center items-center overflow-hidden">
-      <Image
-        src={"/home/bg-pattern-footer.svg"}
-        height={1202}
-        width={1202}
-        alt="Background Footer"
-        className="relative max-w-none max-h-none mt-[156px]"
-      />
-      </div>
+        <div className="absolute w-screen h-[1248px] bg-[#25293A] left-0 bottom-0 flex justify-center items-center overflow-hidden">
+          <Image
+            src={"/home/bg-pattern-footer.svg"}
+            height={1202}
+            width={1202}
+            alt="Background Footer"
+            className="relative max-w-none max-h-none mt-[156px]"
+          />
+        </div>
         <Image
           src={"/shared/logo.svg"}
           height={30}
@@ -78,11 +78,7 @@ export default function Home() {
             description3={"VIP support Try for Free"}
           />
         </section>
-
-        <section className="my-[100px] h-[254px] mb-[100px] text-red-500 z-20">
-          Coming 4 Nov 2020
-        47 Days 07 Hours 56 Min 14 Sec Get Started
-        </section>
+        <Footer />
       </main>
     </>
   );
