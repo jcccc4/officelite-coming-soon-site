@@ -10,6 +10,7 @@ type Props = {
   description2: string;
   description3: string;
   isPro: boolean;
+  clickHandler:()=>void
 };
 
 export default function Card({
@@ -20,6 +21,7 @@ export default function Card({
   description1,
   description2,
   description3,
+  clickHandler
 }: Props) {
   return (
     <div
@@ -42,7 +44,7 @@ export default function Card({
         <li>{description2}</li>
         <li>{description3}</li>
       </ul>
-      <Button buttonTheme={"px-[41.5px] bg-[#E4EAFF] text-[#5175FF] mt-8"}>
+      <Button buttonTheme={"px-[41.5px] bg-[#E4EAFF] text-[#5175FF] mt-8"}  clickHandler={clickHandler } >
         Try for Free
       </Button>
     </div>
