@@ -2,15 +2,14 @@
 
 import React, { useEffect, useState } from "react";
 import TimeCard from "./TimeCard";
-import Button from "./Button";
 
 type Props = {
-  marginY: string;
+  paddingY: string;
   textColor: string;
   isGetStarted: boolean;
 };
 
-function Footer({ marginY, textColor, isGetStarted }: Props) {
+function Footer({ paddingY, textColor, isGetStarted }: Props) {
   const currentdate = new Date();
   const deadlinedate = new Date(
     Date.UTC(
@@ -53,12 +52,12 @@ function Footer({ marginY, textColor, isGetStarted }: Props) {
 
   return (
     <footer
-      className={`${marginY} w-[327px]  text-white z-20 uppercase tracking-[5px] flex flex-col items-center`}
+      className={`${paddingY} w-[327px]  text-white z-20 uppercase tracking-[5px] flex flex-col items-center md:w-auto relative`}
     >
       <h3 className={textColor}>
-        Coming <span className="text-[#5175FF]">4 Nov 2020</span>
+        Coming <span className="text-[#5175FF] ">4 Nov 2020</span>
       </h3>
-      <section className="flex mt-[18px] gap-x-[13px]">
+      <section className="flex mt-[18px] gap-x-[13px] md:gap-x-4">
         <TimeCard number={days} stat={"Days"} isGetStarted={isGetStarted} />
         <TimeCard number={hours} stat={"Hours"} isGetStarted={isGetStarted} />
         <TimeCard number={minutes} stat={"Min"} isGetStarted={isGetStarted} />

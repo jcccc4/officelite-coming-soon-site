@@ -3,8 +3,9 @@
 @tailwind utilities;
 
 @layer base {
+
   body,html{
-    @apply bg-[#FAFAFA] text-[#333950]
+    @apply bg-[#FAFAFA] text-[#333950] overflow-x-hidden
   }
 
   h1 {

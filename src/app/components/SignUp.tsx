@@ -1,7 +1,7 @@
 import React from "react";
-import Footer from "@/app/components/Footer";
+import Footer from "@/app/utilities/Footer";
 import Image from "next/image";
-import FormPage from "./FormPage";
+import FormPage from "@/app/utilities/FormPage";
 
 type Props = {
   clickHandler: () => void;
@@ -11,15 +11,7 @@ export default function SignUp({ clickHandler, isGetStarted }: Props) {
   return (
     <>
       <main className="flex flex-col items-center relative z-10 min">
-        <div className="absolute w-screen h-[320px] bg-[#25293A] left-0 bottom-0 flex justify-center items-center overflow-hidden -z-10">
-          <Image
-            src={"/home/bg-pattern-footer.svg"}
-            height={1202}
-            width={1202}
-            alt="Background Footer"
-            className="relative max-w-none max-h-none mt-[156px]"
-          />
-        </div>
+       
         <Image
           src={"/shared/logo.svg"}
           height={30}
