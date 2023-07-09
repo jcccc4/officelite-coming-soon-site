@@ -84,7 +84,7 @@ export default function FormPage({ clickHandler }: Props) {
   };
   
   return (
-    <form className="mx-auto w-[327px] rounded-[13px] bg-white mb-[87px] flex flex-col p-6 gap-y-6">
+    <form className="relative mx-auto w-[327px] rounded-[13px] bg-white mb-[87px] flex flex-col p-6 gap-y-6 z-10 md:w-[445px] md:h-[508px] md:mb-[126px] md:px-10 md:pt-10">
       <Input
         type={"text"}
         onfocusHandler={onfocusHandler}
@@ -131,7 +131,7 @@ export default function FormPage({ clickHandler }: Props) {
         Company
       </Input>
       <Button
-        buttonTheme={"w-[279px] py-[14px]  text-white bg-[#5175FF]"}
+        buttonTheme={"w-[279px] py-[14px]  text-white bg-[#5175FF] md:mt-4 md:w-[360px]"}
         clickHandler={clickHandler}
       >
         Get on the list

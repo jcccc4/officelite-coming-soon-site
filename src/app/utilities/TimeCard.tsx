@@ -2,7 +2,7 @@
 import React, { useEffect } from "react";
 
 type Props = {
-  number: number;
+  number: string;
   stat: string;
   isGetStarted:boolean
 };

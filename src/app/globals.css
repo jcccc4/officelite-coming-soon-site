@@ -5,11 +5,11 @@
 @layer base {
 
   body,html{
-    @apply bg-[#FAFAFA] text-[#333950] overflow-x-hidden
+    @apply bg-[#FAFAFA] text-[#333950] overflow-x-hidden dsk:h-screen 
   }
 
   h1 {
-    @apply font-bold text-h1 ;
+    @apply font-bold text-h1 lg:text-h1-lg ;
   }
   h2 {
     @apply font-bold text-h2 ;
@@ -19,6 +19,6 @@
   }
 
   p {
-    @apply text-p ;
+    @apply text-p lg:text-p-lg;
   }
 }

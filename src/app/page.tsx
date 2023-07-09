@@ -19,16 +19,7 @@ export default function Home() {
   };
   return (
     <> 
-      <div className="w-full flex justify-center  absolute md:justify-end  ">
-        <Image
-          src={"/home/bg-pattern-header.svg"}
-          height={458}
-          width={458}
-          alt="Background Header"
-          className="absolute -top-[170px] md:w-[666px] md:h-[666px] md:-top-[164px] md:-right-[293px]"
-        />
-        
-      </div>
+
       {pageHandler()}
     </>
   );
